@@ -1,2 +1,279 @@
-*{box-sizing:border-box}#root,body,html{background:#141622;height:100%;margin:0;padding:0;width:100%}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}.hud_container{align-items:center;color:#ebf4fc;font-family:Skate,monospace;font-size:2rem;left:45vw;opacity:0;position:absolute;text-shadow:0 0 2px #000,0 0 8px #4dfff0,0 0 16px #4deaff;top:20px;transition:opacity 1s ease;z-index:1000}.hud_velocity{margin-left:34vw;min-width:200px;text-shadow:0 0 2px #000,0 0 20px #ff4d4d}.current_level,.hud_velocity{color:#fff;font-size:2rem;padding-top:10px;position:absolute}.current_level{margin-left:-40vw;text-shadow:0 0 2px #000,0 0 20px #4dff4d}@font-face{font-family:Sugar Punch;src:local("Sugar Punch"),url(/static/media/sugarpunch.44aa5e8803c872d6d49b.otf) format("opentype")}@font-face{font-family:Skate;src:local("Skate"),url(/static/media/skate.fc09128e55e58ee61ff2.ttf) format("opentype")}.main_menu{align-items:center;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);cursor:grab;display:flex;height:100%;justify-content:center;left:0;opacity:0;position:fixed;top:0;transition:opacity 1s ease;transition:background-color 1s ease;transition:opacity 1s;width:100%;z-index:1000}.show{opacity:1}.logo{margin-top:1rem;max-height:100%;max-width:100%;width:40vw}.name_game{color:#f0f8ff;font-family:Sugar Punch,monospace;font-size:5rem;margin-top:3rem}.column_container{align-items:center;display:flex;flex-direction:column;justify-content:center}.play_button{background-color:transparent;border:none;color:#fff;cursor:pointer;font-family:Skate,monospace;font-size:2rem}.play_button:hover{border-radius:10px;min-width:50%;text-shadow:0 0 2px #000,0 0 8px #4dff4d,0 0 16px #53ff4d;transition:background-color 1s ease}.random_fact{padding-top:10px}.random_fact,.teq_label{color:#f0f8ff;font-size:1rem}.teq_label{padding-top:1rem}.shake{-webkit-animation:shake 20s cubic-bezier(.36,.07,.19,.97) infinite;animation:shake 20s cubic-bezier(.36,.07,.19,.97) infinite}.block_all{pointer-events:none}@-webkit-keyframes shake{10%,90%{-webkit-transform:translate3d(-10rem,3rem,0);transform:translate3d(-10rem,3rem,0)}20%,80%{-webkit-transform:translate3d(10rem,-5rem,0);transform:translate3d(10rem,-5rem,0)}30%,50%,70%{-webkit-transform:translate3d(41rem,6rem,0);transform:translate3d(41rem,6rem,0)}40%,60%{-webkit-transform:translate3d(16rem,-6rem,0);transform:translate3d(16rem,-6rem,0)}}@keyframes shake{10%,90%{-webkit-transform:translate3d(-10rem,3rem,0);transform:translate3d(-10rem,3rem,0)}20%,80%{-webkit-transform:translate3d(10rem,-5rem,0);transform:translate3d(10rem,-5rem,0)}30%,50%,70%{-webkit-transform:translate3d(41rem,6rem,0);transform:translate3d(41rem,6rem,0)}40%,60%{-webkit-transform:translate3d(16rem,-6rem,0);transform:translate3d(16rem,-6rem,0)}}.section_fallback{margin-left:6rem;margin-top:30vh}h1.fallback{color:#fff;min-width:50vw;text-shadow:0 0 2px #f30000,0 0 4px #4dfff0}div.fallback{color:#fff}span.item{color:#ffb7b7}span.fallback{opacity:0;text-transform:uppercase}.loader0{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.2s;animation-delay:1.2s}.loader1{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.3s;animation-delay:1.3s}.loader2{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.4s;animation-delay:1.4s}.loader3{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.5s;animation-delay:1.5s}.loader4{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.6s;animation-delay:1.6s}.loader5{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.7s;animation-delay:1.7s}.loader6{-webkit-animation:drop 1.2s ease-in-out infinite;animation:drop 1.2s ease-in-out infinite;-webkit-animation-delay:1.8s;animation-delay:1.8s}@-webkit-keyframes drop{10%{opacity:.5}20%{opacity:1;text-shadow:0 0 1px #fff,0 0 2px #4dfff0}80%{opacity:1;text-shadow:0 0 2px #fff,0 0 4px #4dfff0}90%{opacity:.5}to{opacity:0}}@keyframes drop{10%{opacity:.5}20%{opacity:1;text-shadow:0 0 1px #fff,0 0 2px #4dfff0}80%{opacity:1;text-shadow:0 0 2px #fff,0 0 4px #4dfff0}90%{opacity:.5}to{opacity:0}}
+* {
+	box-sizing: border-box;
+}
+#root,
+body,
+html {
+	background: #141622;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif;
+	margin: 0;
+}
+.hud_container {
+	align-items: center;
+	color: #ebf4fc;
+	font-family: Skate, monospace;
+	font-size: 2rem;
+	left: 45vw;
+	opacity: 0;
+	position: absolute;
+	text-shadow: 0 0 2px #000, 0 0 8px #4dfff0, 0 0 16px #4deaff;
+	top: 20px;
+	transition: opacity 1s ease;
+	z-index: 1000;
+}
+.hud_velocity {
+	margin-left: 34vw;
+	min-width: 200px;
+	text-shadow: 0 0 2px #000, 0 0 20px #ff4d4d;
+}
+.current_level,
+.hud_velocity {
+	color: #fff;
+	font-size: 2rem;
+	padding-top: 10px;
+	position: absolute;
+}
+.current_level {
+	margin-left: -40vw;
+	text-shadow: 0 0 2px #000, 0 0 20px #4dff4d;
+}
+@font-face {
+	font-family: Sugar Punch;
+	src: local("Sugar Punch"),
+		url(./static/media/sugarpunch.44aa5e8803c872d6d49b.otf)
+			format("opentype");
+}
+@font-face {
+	font-family: Skate;
+	src: local("Skate"),
+		url(./static/media/skate.fc09128e55e58ee61ff2.ttf)
+			format("opentype");
+}
+.main_menu {
+	align-items: center;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	cursor: grab;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	transition: opacity 1s ease;
+	transition: background-color 1s ease;
+	transition: opacity 1s;
+	width: 100%;
+	z-index: 1000;
+}
+.show {
+	opacity: 1;
+}
+.logo {
+	margin-top: 1rem;
+	max-height: 100%;
+	max-width: 100%;
+	width: 40vw;
+}
+.name_game {
+	color: #f0f8ff;
+	font-family: Sugar Punch, monospace;
+	font-size: 5rem;
+	margin-top: 3rem;
+}
+.column_container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.play_button {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: Skate, monospace;
+	font-size: 2rem;
+}
+.play_button:hover {
+	border-radius: 10px;
+	min-width: 50%;
+	text-shadow: 0 0 2px #000, 0 0 8px #4dff4d, 0 0 16px #53ff4d;
+	transition: background-color 1s ease;
+}
+.random_fact {
+	padding-top: 10px;
+}
+.random_fact,
+.teq_label {
+	color: #f0f8ff;
+	font-size: 1rem;
+}
+.teq_label {
+	padding-top: 1rem;
+}
+.shake {
+	-webkit-animation: shake 20s cubic-bezier(0.36, 0.07, 0.19, 0.97)
+		infinite;
+	animation: shake 20s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+.block_all {
+	pointer-events: none;
+}
+@-webkit-keyframes shake {
+	10%,
+	90% {
+		-webkit-transform: translate3d(-10rem, 3rem, 0);
+		transform: translate3d(-10rem, 3rem, 0);
+	}
+	20%,
+	80% {
+		-webkit-transform: translate3d(10rem, -5rem, 0);
+		transform: translate3d(10rem, -5rem, 0);
+	}
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translate3d(41rem, 6rem, 0);
+		transform: translate3d(41rem, 6rem, 0);
+	}
+	40%,
+	60% {
+		-webkit-transform: translate3d(16rem, -6rem, 0);
+		transform: translate3d(16rem, -6rem, 0);
+	}
+}
+@keyframes shake {
+	10%,
+	90% {
+		-webkit-transform: translate3d(-10rem, 3rem, 0);
+		transform: translate3d(-10rem, 3rem, 0);
+	}
+	20%,
+	80% {
+		-webkit-transform: translate3d(10rem, -5rem, 0);
+		transform: translate3d(10rem, -5rem, 0);
+	}
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translate3d(41rem, 6rem, 0);
+		transform: translate3d(41rem, 6rem, 0);
+	}
+	40%,
+	60% {
+		-webkit-transform: translate3d(16rem, -6rem, 0);
+		transform: translate3d(16rem, -6rem, 0);
+	}
+}
+.section_fallback {
+	margin-left: 6rem;
+	margin-top: 30vh;
+}
+h1.fallback {
+	color: #fff;
+	min-width: 50vw;
+	text-shadow: 0 0 2px #f30000, 0 0 4px #4dfff0;
+}
+div.fallback {
+	color: #fff;
+}
+span.item {
+	color: #ffb7b7;
+}
+span.fallback {
+	opacity: 0;
+	text-transform: uppercase;
+}
+.loader0 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+.loader1 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.3s;
+	animation-delay: 1.3s;
+}
+.loader2 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+.loader3 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+.loader4 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.6s;
+	animation-delay: 1.6s;
+}
+.loader5 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.7s;
+	animation-delay: 1.7s;
+}
+.loader6 {
+	-webkit-animation: drop 1.2s ease-in-out infinite;
+	animation: drop 1.2s ease-in-out infinite;
+	-webkit-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+@-webkit-keyframes drop {
+	10% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 1;
+		text-shadow: 0 0 1px #fff, 0 0 2px #4dfff0;
+	}
+	80% {
+		opacity: 1;
+		text-shadow: 0 0 2px #fff, 0 0 4px #4dfff0;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@keyframes drop {
+	10% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 1;
+		text-shadow: 0 0 1px #fff, 0 0 2px #4dfff0;
+	}
+	80% {
+		opacity: 1;
+		text-shadow: 0 0 2px #fff, 0 0 4px #4dfff0;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0;
+	}
+}
 /*# sourceMappingURL=main.05d6de5b.css.map*/
