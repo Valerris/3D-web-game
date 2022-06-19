@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.05d6de5b.css",
+    "main.js": "/static/js/main.eec6b633.js",
+    "static/media/THE_END.wav": "/static/media/THE_END.fa525c2b99c912119030.wav",
+    "static/media/crispy.mp3": "/static/media/crispy.53707b087c5d91da9dc0.mp3",
+    "static/media/json.png": "/static/media/json.3e62ed1204f162162152.png",
+    "static/media/sky.jpg": "/static/media/sky.a1930b14e3bacd205f53.jpg",
+    "static/media/pedro.png": "/static/media/pedro.610c298e1596f452228c.png",
+    "static/media/clouds.jpg": "/static/media/clouds.167c28d03c9f7ffda704.jpg",
+    "static/media/Metal_Mesh_008_opacity.jpg": "/static/media/Metal_Mesh_008_opacity.7ae657650150e9b47ff7.jpg",
+    "static/media/Metal_Mesh_008_normal.jpg": "/static/media/Metal_Mesh_008_normal.b9b50128133d5aaddfcf.jpg",
+    "static/media/Metal_Mesh_008_metallic.jpg": "/static/media/Metal_Mesh_008_metallic.50addf717c5dd1b5d9a9.jpg",
+    "static/media/cloud_displacement.jpg": "/static/media/cloud_displacement.3c1d5aa28807df932917.jpg",
+    "static/media/Metal_Mesh_008_ambientOcclusion.jpg": "/static/media/Metal_Mesh_008_ambientOcclusion.18818632653878f0b622.jpg",
+    "static/media/Metal_Mesh_008_basecolor.jpg": "/static/media/Metal_Mesh_008_basecolor.8134974be8a11484e23f.jpg",
+    "static/media/Metal_Mesh_008_roughness.jpg": "/static/media/Metal_Mesh_008_roughness.d73c48893dcc150252c1.jpg",
+    "static/media/Metal_Mesh_008_height.png": "/static/media/Metal_Mesh_008_height.d759894b833a77d7f165.png",
+    "static/media/color.jpg": "/static/media/color.d48938a2d283cc04c3d2.jpg",
+    "static/media/level_up.mp3": "/static/media/level_up.35396ec36d51751d2469.mp3",
+    "static/media/sugarpunch.otf": "/static/media/sugarpunch.44aa5e8803c872d6d49b.otf",
+    "static/media/roughness.jpg": "/static/media/roughness.9c582ed56b849d523b55.jpg",
+    "static/media/skate.ttf": "/static/media/skate.fc09128e55e58ee61ff2.ttf",
+    "static/media/floor.png": "/static/media/floor.dcf48d1e64d420532d04.png",
+    "static/media/secret.png": "/static/media/secret.88f0ee7e438bf098ce99.png",
+    "static/media/floor_emissive_map.png": "/static/media/floor_emissive_map.de48413b60c103eaf3f7.png",
+    "static/media/oh_no_sound.mp3": "/static/media/oh_no_sound.7f98d71b183bb78ed6dc.mp3",
+    "index.html": "/index.html",
+    "main.05d6de5b.css.map": "/static/css/main.05d6de5b.css.map",
+    "main.eec6b633.js.map": "/static/js/main.eec6b633.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05d6de5b.css",
+    "static/js/main.eec6b633.js"
+  ]
+}
